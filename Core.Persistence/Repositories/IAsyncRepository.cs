@@ -8,7 +8,8 @@ public interface IAsyncRepository<TEntity, TEntityId>
 {
     Task<TEntity?> GetAsync (
         Expression<Func<TEntity, bool>> predicate, 
-        Func<IQueryable<TEntity>, IIncludableQueryable<TEntity, object>>? include = null
+        Func<IQueryable<TEntity>, IIncludableQueryable<TEntity, object>>? include = null,
+        bool withDeleted = false
             );
 
 }
