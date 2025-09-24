@@ -2,9 +2,9 @@
 
 public class Sort
 {
+
     public string Field { get; set; }
     public string Direction { get; set; }
-
 
     public Sort()
     {
@@ -12,9 +12,9 @@ public class Sort
         Direction = string.Empty;
     }
 
-    public Sort(string field, string direction)
+    public Sort(string field, string dir)
     {
         Field = field;
-        Direction = direction;
+        Direction = dir;
     }
 }
